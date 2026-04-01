@@ -1482,7 +1482,8 @@ body::after {
 }
 
 .record_num {
-    font-size: 64px;
+    font-size: 100px;
+    font-family: 'neurimboGothic';
     line-height: 1;
     font-weight: 500;
     margin-bottom: 20px;
