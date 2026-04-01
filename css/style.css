@@ -144,11 +144,11 @@ body::after {
 }
 
 
-body::-webkit-scrollbar {
-    display: none;
-}
 
-/* 스크롤바 안보이게 하기! (크롬에서만) */
+#wrap_wrap{
+    min-width: 1400px;
+    overflow: hidden;
+}
 
 #header_wrap {
     height: 80px;
