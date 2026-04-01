@@ -688,6 +688,7 @@ body::after {
     text-align: justify;
     line-height: 25px;
     padding-bottom: 64px;
+    letter-spacing: -0.52px
 }
 
 /* 큐레이션 영화 리뷰 */
@@ -836,7 +837,7 @@ body::after {
     opacity: 0;
 }
 
-.movie_c + .movie_c {
+.movie_c+.movie_c {
     margin-left: -1px;
 }
 
@@ -1454,6 +1455,7 @@ body::after {
 /* 미지의기록 */
 
 .record_wrap {
+    font-family: ne;
     width: 1320px;
     margin: 250px auto;
     position: relative;
@@ -1500,8 +1502,8 @@ body::after {
 }
 
 .record_box p {
+    font-family: 'neurimboGothic';
     font-size: 25px;
-      font-family: 'neurimboGothic';
     line-height: 1.4;
     text-shadow:
         -1px -1px 0 #2c2c2c,
