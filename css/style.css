@@ -85,6 +85,7 @@ a {
 }
 
 
+
 body {
     font-size: 15px;
     line-height: 22px;
@@ -93,21 +94,133 @@ body {
     letter-spacing: -0.1px;
 }
 
+/* 스크롤 */
 html {
     scroll-behavior: smooth;
 }
 
-/* 배경 빙글빙글 (+이미지 바꾸기) */
+/* 스크롤바 */
+body::-webkit-scrollbar {
+    width: 18px;
+    height: 18px;
+}
+
+/* 세로 트랙 */
+body::-webkit-scrollbar-track:vertical {
+    background: #E9DCCB;
+    border-left: 1px solid #2c2c2c;
+}
+
+/* 가로 트랙 */
+body::-webkit-scrollbar-track:horizontal {
+    background: #E9DCCB;
+    border-top: 1px solid #2c2c2c;
+}
+
+/* 공통 thumb */
+body::-webkit-scrollbar-thumb {
+    background: #49917f;
+    border: 1px solid #2c2c2c;
+    border-radius: 0;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #F2D48B;
+}
+
+/* 위/아래/좌/우 버튼 공통 */
+body::-webkit-scrollbar-button:single-button {
+    display: block;
+    background-color: #49917f;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 0;
+}
+
+/* 세로 버튼 공통 */
+body::-webkit-scrollbar-button:single-button:vertical {
+    width: 18px;
+    height: 18px;
+    border-left: 1px solid #2c2c2c;
+}
+
+/* 위 버튼 */
+body::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-top: 1px solid #2c2c2c;
+    border-bottom: 1px solid #2c2c2c;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23E9DCCB' d='M12 8 5 15h14z'/></svg>");
+}
+
+body::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+    background-color: #DB9C93;
+}
+
+/* 아래 버튼 */
+body::-webkit-scrollbar-button:single-button:vertical:increment {
+    border-top: 1px solid #2c2c2c;
+    border-bottom: 1px solid #2c2c2c;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23E9DCCB' d='M12 16 19 9H5z'/></svg>");
+}
+
+body::-webkit-scrollbar-button:single-button:vertical:increment:hover {
+    background-color: #DB9C93;
+}
+
+/* 가로 버튼 공통 */
+body::-webkit-scrollbar-button:single-button:horizontal {
+    width: 18px;
+    height: 18px;
+    border-top: 1px solid #2c2c2c;
+}
+
+/* 왼쪽 버튼 */
+body::-webkit-scrollbar-button:single-button:horizontal:decrement {
+    border-left: 1px solid #2c2c2c;
+    border-right: 1px solid #2c2c2c;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23E9DCCB' d='M8 12 15 5v14z'/></svg>");
+}
+
+body::-webkit-scrollbar-button:single-button:horizontal:decrement:hover {
+    background-color: #DB9C93;
+}
+
+/* 오른쪽 버튼 */
+body::-webkit-scrollbar-button:single-button:horizontal:increment {
+    border-left: 1px solid #2c2c2c;
+    border-right: 1px solid #2c2c2c;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23E9DCCB' d='M16 12 9 5v14z'/></svg>");
+}
+
+body::-webkit-scrollbar-button:single-button:horizontal:increment:hover {
+    background-color: #DB9C93;
+}
+
+/* 우하단 코너 */
+body::-webkit-scrollbar-corner {
+    background: #E9DCCB;
+    border-top: 1px solid #2c2c2c;
+    border-left: 1px solid #2c2c2c;
+}
+
+
+
+
+
+
+/* 배경 빙글빙글 */
 body::before {
     content: "";
     position: fixed;
     top: 30%;
-    left: 90%;
+    left: 88%;
     width: 100px;
     height: 100px;
     background: url("../img/bg_element1.png") no-repeat center / contain;
     z-index: -5;
-    animation: bgSpin1 15s linear infinite;
+    pointer-events: none;
+    animation: bgSpin1 12s linear infinite;
 }
 
 body::after {
@@ -118,8 +231,22 @@ body::after {
     width: 100px;
     height: 100px;
     background: url("../img/bg_element2.png") no-repeat center / contain;
-    z-index: -5;
-    animation: bgSpin2 25s linear infinite;
+    z-index: -15;
+    pointer-events: none;
+    animation: bgSpin2 20s linear infinite;
+}
+
+#wrap_wrap::before {
+    content: "";
+    position: fixed;
+    top: 90%;
+    left: 92%;
+    width: 30px;
+    height: 30px;
+    background: url("../img/bg_element3.png") no-repeat center / contain;
+    z-index: -15;
+    pointer-events: none;
+    animation: bgSpin3 10s linear infinite;
 }
 
 /* 배경뱅글뱅글 */
@@ -143,9 +270,19 @@ body::after {
     }
 }
 
+@keyframes bgSpin3 {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
 
 
-#wrap_wrap{
+
+#wrap_wrap {
     min-width: 1400px;
     overflow: hidden;
 }
@@ -470,7 +607,7 @@ body::after {
 
 /* 포스터 hover */
 .c1box_left:hover {
-    box-shadow: 4px 4px  #49917f;
+    box-shadow: 4px 4px #49917f;
 }
 
 .c1box_left:hover .poster_img {
@@ -609,38 +746,46 @@ body::after {
     transform: rotate(360deg);
 }
 
-
 /* 지난 큐레이션 */
 
 .contents2_wrap {
     width: 1320px;
     height: 650px;
     margin: 150px auto;
-}
-
-.contents2_wrap h1 {
     position: relative;
-    top: -50px;
-    left: -1px;
-    /* border랑 선 겹치게 하기 */
-    z-index: 2;
-    /* 박스 위로 올라오게 */
 }
 
 .contents2 {
+    position: relative;
     background-color: rgba(255, 255, 255, 0.726);
     width: 1320px;
     height: 650px;
     border: 1px solid #2c2c2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents2 h1 {
+    position: absolute;
+    top: -50px;
+    left: -1px;
+    z-index: 2;
+    margin: 0;
+    line-height: 0;
+}
+
+.contents2 h1 img {
+    display: block;
 }
 
 .contents2_box {
     position: relative;
-    margin: 50px auto;
     width: 1240px;
     height: 500px;
     display: flex;
     gap: 15px;
+    margin: 0;
 }
 
 .movie_c {
@@ -666,8 +811,6 @@ body::after {
     color: #F2D48B;
 }
 
-
-
 /* hover 설정 */
 /* hover했을 때 검은 레이어 */
 .movie_c::after {
@@ -675,7 +818,7 @@ body::after {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0);
-    transition: backgroud 0.35s ease;
+    transition: background 0.35s ease;
     pointer-events: none;
 }
 
@@ -693,7 +836,7 @@ body::after {
     opacity: 0;
 }
 
-.movie_c+.movie_c {
+.movie_c + .movie_c {
     margin-left: -1px;
 }
 
@@ -703,11 +846,9 @@ body::after {
 
 .movie_hover_txt {
     font-family: 'neurimboGothic';
-    font-size: 24px;
     position: absolute;
     left: 50%;
     bottom: 20px;
-    /* 시작 위치 (아래) */
     transform: translateX(-50%);
     color: #fff;
     font-size: 18px;
@@ -728,8 +869,6 @@ body::after {
         1px 0 0 #2c2c2c;
 }
 
-
-
 .movie_c:hover .movie_hover_txt {
     bottom: 50%;
     transform: translate(-50%, 50%);
@@ -737,24 +876,21 @@ body::after {
     font-size: 24px;
 }
 
-.movie_c_img2 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* 박스 꽉 채우고 잘라냄 */
-    object-position: 57% 10%;
-    /* 보여주는 위치 */
-    display: block;
-}
-
+.movie_c_img,
+.movie_c_img2,
 .movie_c_img3 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* 박스 꽉 채우고 잘라냄 */
-    object-position: 46% 10%;
-    /* 보여주는 위치 */
     display: block;
+}
+
+.movie_c_img2 {
+    object-position: 57% 10%;
+}
+
+.movie_c_img3 {
+    object-position: 46% 10%;
 }
 
 .movie_c h4 {
@@ -792,6 +928,13 @@ body::after {
     font-weight: 500;
 }
 
+
+
+
+
+
+
+
 /* 이벤트 (중간) 배너 */
 .banner_section1 {
     width: 100%;
@@ -826,7 +969,6 @@ body::after {
 
 
 
-
 /* section2 */
 
 #section2 {
@@ -850,46 +992,51 @@ body::after {
 }
 
 .contents3 {
-    background-color: #E9DCCB;
     width: 1320px;
     height: 800px;
+    background-color: #E9DCCB;
     border: 1px solid #2c2c2c;
+    box-sizing: border-box;
+    padding: 0 40px;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 15px;
 }
 
 .contents3_box1,
 .contents3_box2 {
     position: relative;
-    margin: 75px 0;
     width: 600px;
-    height: 650px;
+    height: 600px;
     border: 1px solid #2c2c2c;
     background-color: #fff;
+    box-sizing: border-box;
+    overflow: visible;
 }
 
-.contents3_box1 {
-    display: block;
-    overflow: hidden;
-    transition:
-        transform 0.35s ease,
-        box-shadow 0.35s ease,
-        background-color 0.35s ease;
-}
-
-/* 서브타이틀 영화소식/영화리뷰 */
-.contents3 h2 {
-    position: relative;
-    top: -1px;
+/* 서브타이틀 영화소식/영화리뷰 - 박스 위에 걸치기 */
+.contents3_box1>h2,
+.contents3_box2>h2 {
+    position: absolute;
+    top: -40px;
     left: -1px;
-    z-index: 2;
+    z-index: 3;
+    line-height: 0;
+}
+
+.contents3_box1>h2 img,
+.contents3_box2>h2 img {
+    display: block;
 }
 
 /* 영화소식 */
 .contents3_box1>.articles_link {
     display: block;
+    width: 100%;
     height: 100%;
+    background-color: #fff;
+    overflow: hidden;
 }
 
 .article_img {
@@ -898,15 +1045,20 @@ body::after {
     object-fit: cover;
     object-position: 0% 4%;
     display: block;
-    border-top: 1px solid #2c2c2c;
     border-bottom: 1px solid #2c2c2c;
-    margin-top: 40px;
+    margin-top: 0;
     transition:
         transform 0.45s ease,
         filter 0.45s ease;
 }
 
-/* 기사 :hover */
+/* 기사 hover */
+.contents3_box1 {
+    transition:
+        box-shadow 0.35s ease,
+        background-color 0.35s ease;
+}
+
 .contents3_box1:hover .article_img {
     transform: scale(1.03);
 }
@@ -914,7 +1066,7 @@ body::after {
 .contents3_box1>.articles_link h3 {
     font-size: 30px;
     font-weight: 400;
-    margin: 25px 0 0 20px;
+    margin: 35px 0 0 20px;
     text-decoration-thickness: 1px;
     transition:
         color 0.3s ease,
@@ -925,24 +1077,19 @@ body::after {
     width: 560px;
     text-align: justify;
     font-size: 15px;
-    margin: 30px 30px 0 20px;
+    margin: 45px 30px 0 20px;
     transition:
         transform 0.3s ease,
         color 0.3s ease;
 }
 
-/* 영화소식 hover */
-.contents3_box1:hover {
-    transform: translateY(-8px);
-}
-
+/* 영화소식 hover - 제목/내용 위로 이동 */
 .contents3_box1:hover>.articles_link h3 {
-    color: #2F4F47;
-    transform: translateX(6px);
+    transform: translateY(-4px);
 }
 
 .contents3_box1:hover>.articles_link p {
-    transform: translateX(6px);
+    transform: translateY(-4px);
     color: #333;
 }
 
@@ -953,17 +1100,36 @@ body::after {
 
 /* 영화리뷰 */
 
-.review_list {
-    margin-top: 40px;
+.contents3_box2 {
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        background-color 0.35s ease;
 }
 
-/* 리뷰 카드 */
+/* 영화리뷰 박스 hover - 오른쪽 이동 */
+.contents3_box2:hover {
+    transform: translateX(8px);
+}
+
+.review_list {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
 .review_box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 35px 20px;
+    flex: 1;
+    min-height: 0;
+    padding: 30px 20px;
     border-bottom: 1px solid #2c2c2c;
+    box-sizing: border-box;
     gap: 20px;
     transition:
         background-color 0.3s ease,
@@ -1002,7 +1168,6 @@ body::after {
 
 .review_user {
     font-size: 14px;
-    margin-right: 10px;
     font-weight: 600;
     margin-right: auto;
     transition: color 0.3s ease;
@@ -1012,7 +1177,7 @@ body::after {
     width: 25px;
     height: 25px;
     margin-right: 6px;
-    transition: transform 0.3s ease;
+    display: block;
 }
 
 .review_meta {
@@ -1025,14 +1190,18 @@ body::after {
 .review_rate {
     display: flex;
     align-items: center;
+    transform: rotate(0deg);
+    transform-origin: center center;
+    transition: transform 0.8s ease;
 }
 
 .review_rate img {
     width: 18px;
     height: 18px;
+    display: block;
 }
 
-/* 영화리뷰 오른쪽(사진//글자) */
+/* 영화리뷰 오른쪽(사진/글자) */
 .review_right {
     position: relative;
     width: 220px;
@@ -1065,23 +1234,20 @@ body::after {
 }
 
 /* 영화 리뷰 hover */
-
-
+.review_box:hover {
+    background-color: #e8a59c;
+}
 
 .review_box:hover .review_left {
-    transform: translateY(-2px);
+    transform: translateX(6px);
 }
 
-.review_box:hover .review_user_icon {
-    transform: scale(1.05);
-}
-
-.review_box:hover .review_user {
-    color: #2F4F47;
+.review_box:hover .review_rate {
+    transform: rotate(360deg);
 }
 
 .review_box:hover .review_right {
-    transform: translateY(-2px);
+    transform: translateX(6px);
     box-shadow: 4px 4px 0 #F2D48B;
     border-color: #2c2c2c;
 }
@@ -1094,7 +1260,6 @@ body::after {
 .review_box:hover .review_badge {
     opacity: 1;
 }
-
 
 
 
@@ -2347,19 +2512,30 @@ body::after {
     width: 1320px;
     height: 100%;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 45px 30px 0;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .footer_left {
-    height: 190px;
+    height: 230px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+.footer_logo {
+    display: block;
+    width: 70px;
+}
+
+.footer_logo img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .footer_info_top {
@@ -2377,13 +2553,19 @@ body::after {
 .footer_info_middle {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
+}
+
+.footer_info_row {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
 }
 
 .footer_info_middle a {
     display: block;
     font-size: 12px;
-    font-weight: 400;
     line-height: 1.4;
     color: #2c2c2c;
     font-weight: 500;
@@ -2391,6 +2573,9 @@ body::after {
 
 .footer_info_middle p {
     font-size: 12px;
+    line-height: 1.4;
+    color: #2c2c2c;
+    font-weight: 500;
 }
 
 .footer_copy {
@@ -2401,10 +2586,10 @@ body::after {
 }
 
 .footer_right {
-    height: 190px;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-end;
 }
 
@@ -2416,8 +2601,8 @@ body::after {
 
 .footer_sns_link {
     display: block;
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
 }
 
 .footer_sns_link img {
@@ -2435,28 +2620,23 @@ body::after {
     font-weight: 500;
 }
 
-.footer_logo {
-    display: block;
-    width: 70px;
-}
-
-.footer_logo img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 /* hover */
 .footer_info_top a:hover,
 .footer_info_middle a:hover {
     color: #4E9A87;
 }
 
-
 .footer_sns_link:hover,
 .footer_logo:hover {
     opacity: 0.8;
 }
+
+
+
+
+
+
+
 
 /* 팝업창(popup) */
 .popup {
