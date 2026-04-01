@@ -776,18 +776,40 @@ body::-webkit-scrollbar {
     font-weight: 500;
 }
 
-
-
 /* 이벤트 (중간) 배너 */
 .banner_section1 {
     width: 100%;
     margin-top: 200px;
 }
 
-.banner_section1 img {
+.event_banner_wrap {
+    position: relative;
     width: 100%;
-    display: block;
+    overflow: hidden;
 }
+
+.event_banner_default,
+.event_banner_hover {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.event_banner_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.event_banner_wrap:hover .event_banner_hover {
+    opacity: 1;
+}
+
+
+
+
 
 /* section2 */
 
@@ -2351,7 +2373,9 @@ body::-webkit-scrollbar {
     font-weight: 500;
 }
 
-.footer_info_middle p{font-size: 12px;}
+.footer_info_middle p {
+    font-size: 12px;
+}
 
 .footer_copy {
     font-size: 12px;
