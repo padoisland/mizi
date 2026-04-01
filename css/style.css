@@ -470,7 +470,7 @@ body::-webkit-scrollbar {
 
 /* 포스터 hover */
 .c1box_left:hover {
-    box-shadow: 12px 12px 24px rgba(44, 44, 44, 0.22);
+    box-shadow: 4px 4px  #49917f;
 }
 
 .c1box_left:hover .poster_img {
