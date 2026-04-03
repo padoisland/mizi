@@ -482,16 +482,16 @@ body::after {
 }
 
 
-/* util admin */
+/* util member */
 
-.admin img {
-    content: url("../img/gnb_admin.png");
+.member img {
+    content: url("../img/gnb_member.png");
     width: 20px;
     display: block;
 }
 
-.admin:hover img {
-    content: url("../img/gnb_hover_admin.png");
+.member:hover img {
+    content: url("../img/gnb_hover_member.png");
     width: 20px;
 }
 
