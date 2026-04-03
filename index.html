@@ -46,7 +46,7 @@
                                 </button>
                             </form>
                         </li>
-                        <li><a class="admin" href="#"><img src="./img/gnb_admin.png" alt="admin"></a></li>
+                        <li><a class="member" href="#"><img src="./img/gnb_member.png" alt="member"></a></li>
                         <!-- 로그인창 뜨게 설정 -->
                         <li><a class="login" href="#"><img class="login_img" src="./img/gnb_login.png" alt="login"></a>
                         </li>
@@ -1269,9 +1269,9 @@
         </div>
     </div>
 
-    <script>// admin과 login 둘 다 눌러도 팝업창이 뜨도록 하기
+    <script>// member과 login 둘 다 눌러도 팝업창이 뜨도록 하기
         (function () {
-            const loginLinks = document.querySelectorAll('.util a.login, .util a.admin');
+            const loginLinks = document.querySelectorAll('.util a.login, .util a.member');
 
             const popup = document.getElementById('loginPopup');
             const overlay = popup.querySelector('.popup_overlay');
