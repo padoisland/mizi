@@ -250,7 +250,9 @@
                             <div class="articles_link">
 
                                 <h3>전주, 독립영화 후반지원 나서</h3>
-                                <p>전주시가 독립영화 창작 환경 개선을 위한 후반제작 지원에 나선다. 전주정보문화산업진흥원과 전주영화제작소는 ‘2026년 상반기 전주 영화 후반제작지원 사업’ 공모를 진행하고, 장·단편 및 DCP 제작 지원작을 선정할 계획이다. 색보정과 사운드 믹싱 등 전문 후반작업을 현물로 제공해 완성도를 높이고, 국내외 영화제 진출까지 이어지는 발판을 마련한다.</p>
+                                <p>전주시가 독립영화 창작 환경 개선을 위한 후반제작 지원에 나선다. 전주정보문화산업진흥원과 전주영화제작소는 ‘2026년 상반기 전주 영화 후반제작지원
+                                    사업’ 공모를 진행하고, 장·단편 및 DCP 제작 지원작을 선정할 계획이다. 색보정과 사운드 믹싱 등 전문 후반작업을 현물로 제공해 완성도를 높이고,
+                                    국내외 영화제 진출까지 이어지는 발판을 마련한다.</p>
                             </div>
                         </a>
                     </div>
@@ -1141,226 +1143,226 @@
         </div>
 
 
-<footer id="footer">
-    <div class="footer_inner">
-        <div class="footer_left">
-            <a href="javascript:return false;" class="footer_logo">
-                <img src="./img/logo.png" alt="미지 로고">
-            </a>
+        <footer id="footer">
+            <div class="footer_inner">
+                <div class="footer_left">
+                    <a href="javascript:return false;" class="footer_logo">
+                        <img src="./img/logo.png" alt="미지 로고">
+                    </a>
 
-            <div class="footer_info_top">
-                <a href="javascript:return false;">이용약관</a>
-                <a href="javascript:return false;">개인정보처리방침</a>
-                <a href="javascript:return false;">법적고지</a>
-                <a href="javascript:return false;">이메일주소무단수집거부</a>
-            </div>
+                    <div class="footer_info_top">
+                        <a href="javascript:return false;">이용약관</a>
+                        <a href="javascript:return false;">개인정보처리방침</a>
+                        <a href="javascript:return false;">법적고지</a>
+                        <a href="javascript:return false;">이메일주소무단수집거부</a>
+                    </div>
 
-            <div class="footer_info_middle">
-                <div class="footer_info_row">
-                    <a href="mailto:indiefilmmizi@gmail.com">mail: indiefilmmizi@gmail.com</a>
-                    <p>대표전화: 051-1000-2000</p>
+                    <div class="footer_info_middle">
+                        <div class="footer_info_row">
+                            <a href="mailto:indiefilmmizi@gmail.com">mail: indiefilmmizi@gmail.com</a>
+                            <p>대표전화: 051-1000-2000</p>
+                        </div>
+
+                        <div class="footer_info_row">
+                            <p>주소: 부산광역시 중구 중앙대로 26 다원중앙타워 10층</p>
+                            <p>대표: 김미지</p>
+                            <p>사업자번호: 100-00-00000</p>
+                        </div>
+                    </div>
+
+                    <p class="footer_copy">Copyrightⓒ미지 All Rights Reserved.</p>
                 </div>
 
-                <div class="footer_info_row">
-                    <p>주소: 부산광역시 중구 중앙대로 26 다원중앙타워 10층</p>
-                    <p>대표: 김미지</p>
-                    <p>사업자번호: 100-00-00000</p>
+                <div class="footer_right">
+                    <div class="footer_sns">
+                        <a href="javascript:return false;" class="footer_sns_link">
+                            <img src="./img/kakao.png" alt="카카오톡">
+                        </a>
+                        <a href="javascript:return false;" class="footer_sns_link">
+                            <img src="./img/insta.png" alt="인스타그램">
+                        </a>
+                    </div>
                 </div>
             </div>
+        </footer>
 
-            <p class="footer_copy">Copyrightⓒ미지 All Rights Reserved.</p>
-        </div>
 
-        <div class="footer_right">
-            <div class="footer_sns">
-                <a href="javascript:return false;" class="footer_sns_link">
-                    <img src="./img/kakao.png" alt="카카오톡">
-                </a>
-                <a href="javascript:return false;" class="footer_sns_link">
-                    <img src="./img/insta.png" alt="인스타그램">
-                </a>
+
+
+        <!-- 제이쿼리 -->
+        <script>  // 헤더투명화 제이쿼리
+            window.addEventListener('scroll', function () {
+                const header = document.getElementById('header_wrap');
+
+                if (window.scrollY >= 820)
+                // 820만큼 내려가면 헤더 배경 바뀌기
+                {
+                    header.classList.add('header-transparent');
+                } else {
+                    header.classList.remove('header-transparent');
+                }
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script>// <!-- swiper 제이쿼리 -->
+            var swiper = new Swiper(".mySwiper", {
+                pagination: {
+                    el: ".swiper-pagination",
+                    dynamicBullets: true,
+                },
+            });
+        </script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                loop: true, speed: 700,
+                // 무한으로 / 스와이퍼 속도
+                autoplay: {
+                    delay: 3000,         // 딜레이 3초!
+                    disableOnInteraction: false, // 클릭이나 드래그한 후에도 자동 재생 되기
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    dynamicBullets: true,
+                },
+            });
+        </script>
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script>// aos 제이쿼리
+            AOS.init({
+                duration: 1000,      // 올라오는 속도
+                easing: 'ease-out-cubic',
+                once: true          // 한 번만 실행 (추천)
+            });
+        </script>
+
+        </script>
+
+        <div class="popup" id="loginPopup" aria-hidden="true"> <!-- 로그인 팝업창 -->
+            <div class="popup_overlay" data-close="login"></div>
+            <div class="popup_box" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+                <button class="popup_close" type="button" data-close="login" aria-label="close">×</button>
+
+                <h2 class="popup_title" id="loginTitle">로그인</h2>
+
+                <form class="popup_form" action="#" onsubmit="return false;">
+                    <label class="popup_label">
+                        <span>아이디</span>
+                        <input class="popup_input" type="text" placeholder="ID를 입력하세요" autocomplete="username">
+                    </label>
+
+                    <label class="popup_label">
+                        <span>비밀번호</span>
+                        <input class="popup_input" type="password" placeholder="••••" autocomplete="current-password">
+                    </label>
+
+                    <!-- onclick ~ 로그인 버튼 눌러도 스크롤 업 되지 않게 -->
+                    <a href="javascript:return false;" class="popup_submit" onclick="return false;">로그인</a>
+
+                    <!-- 하단 보조 메뉴 (UI only) -->
+                    <div class="popup_subactions">
+                        <a href="javascript:return false;" class="popup_subbtn">회원가입</a>
+                        <a href="javascript:return false;" class="popup_subbtn">아이디/비밀번호찾기</a>
+                    </div>
+                    <p class="popup_hint">
+                        미지의 세계에 오신 걸 환영합니다
+                    </p>
+                </form>
             </div>
         </div>
-    </div>
-</footer>
+
+        <script>// member과 login 둘 다 눌러도 팝업창이 뜨도록 하기
+            (function () {
+                const loginLinks = document.querySelectorAll('.util a.login, .util a.member');
+
+                const popup = document.getElementById('loginPopup');
+                const overlay = popup.querySelector('.popup_overlay');
+                const closeBtns = popup.querySelectorAll('[data-close="login"]');
+
+                function openModal() {
+                    popup.classList.add('is-open');
+                    popup.setAttribute('aria-hidden', 'false');
+                    document.documentElement.style.overflow = 'hidden';
+                    const first = popup.querySelector('.popup_input');
+                    first && first.focus();
+                }
+
+                function closeModal() {
+                    popup.classList.remove('is-open');
+                    popup.setAttribute('aria-hidden', 'true');
+                    document.documentElement.style.overflow = '';
+                }
 
 
+                loginLinks.forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        openModal();
+                    });
+                });
+
+                overlay.addEventListener('click', closeModal);
+                closeBtns.forEach(btn => btn.addEventListener('click', closeModal));
+
+                document.addEventListener('keydown', (e) => {
+                    if (!popup.classList.contains('is-open')) return;
+                    if (e.key === 'Escape') closeModal();
+                });
+            })();
+        </script>
 
 
-    <!-- 제이쿼리 -->
-    <script>  // 헤더투명화 제이쿼리
-        window.addEventListener('scroll', function () {
-            const header = document.getElementById('header_wrap');
+        <!-- 미지의기록 -->
+        <script>
+            const counters = document.querySelectorAll('.count');
+            const contents5 = document.querySelector('.record');
+            let counterStarted = false;
 
-            if (window.scrollY >= 820)
-            // 820만큼 내려가면 헤더 배경 바뀌기
-            {
-                header.classList.add('header-transparent');
-            } else {
-                header.classList.remove('header-transparent');
-            }
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script>// <!-- swiper 제이쿼리 -->
-        var swiper = new Swiper(".mySwiper", {
-            pagination: {
-                el: ".swiper-pagination",
-                dynamicBullets: true,
-            },
-        });
-    </script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            loop: true, speed: 700,
-            // 무한으로 / 스와이퍼 속도
-            autoplay: {
-                delay: 3000,         // 딜레이 3초!
-                disableOnInteraction: false, // 클릭이나 드래그한 후에도 자동 재생 되기
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-                dynamicBullets: true,
-            },
-        });
-    </script>
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>// aos 제이쿼리
-        AOS.init({
-            duration: 1000,      // 올라오는 속도
-            easing: 'ease-out-cubic',
-            once: true          // 한 번만 실행 (추천)
-        });
-    </script>
+            function startCounter() {
+                counters.forEach(counter => {
+                    const target = Number(counter.dataset.target);
+                    let current = 0;
+                    const duration = 1800;
+                    const stepTime = 20;
+                    const totalSteps = duration / stepTime;
+                    const increment = target / totalSteps;
 
-    </script>
+                    const timer = setInterval(() => {
+                        current += increment;
 
-    <div class="popup" id="loginPopup" aria-hidden="true"> <!-- 로그인 팝업창 -->
-        <div class="popup_overlay" data-close="login"></div>
-        <div class="popup_box" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
-            <button class="popup_close" type="button" data-close="login" aria-label="close">×</button>
-
-            <h2 class="popup_title" id="loginTitle">로그인</h2>
-
-            <form class="popup_form" action="#" onsubmit="return false;">
-                <label class="popup_label">
-                    <span>아이디</span>
-                    <input class="popup_input" type="text" placeholder="ID를 입력하세요" autocomplete="username">
-                </label>
-
-                <label class="popup_label">
-                    <span>비밀번호</span>
-                    <input class="popup_input" type="password" placeholder="••••" autocomplete="current-password">
-                </label>
-
-                <!-- onclick ~ 로그인 버튼 눌러도 스크롤 업 되지 않게 -->
-                <a href="javascript:return false;" class="popup_submit" onclick="return false;">로그인</a>
-
-                <!-- 하단 보조 메뉴 (UI only) -->
-                <div class="popup_subactions">
-                    <a href="javascript:return false;" class="popup_subbtn">회원가입</a>
-                    <a href="javascript:return false;" class="popup_subbtn">아이디/비밀번호찾기</a>
-                </div>
-                <p class="popup_hint">
-                    미지의 세계에 오신 걸 환영합니다
-                </p>
-            </form>
-        </div>
-    </div>
-
-    <script>// member과 login 둘 다 눌러도 팝업창이 뜨도록 하기
-        (function () {
-            const loginLinks = document.querySelectorAll('.util a.login, .util a.member');
-
-            const popup = document.getElementById('loginPopup');
-            const overlay = popup.querySelector('.popup_overlay');
-            const closeBtns = popup.querySelectorAll('[data-close="login"]');
-
-            function openModal() {
-                popup.classList.add('is-open');
-                popup.setAttribute('aria-hidden', 'false');
-                document.documentElement.style.overflow = 'hidden';
-                const first = popup.querySelector('.popup_input');
-                first && first.focus();
+                        if (current >= target) {
+                            counter.textContent = target.toLocaleString();
+                            clearInterval(timer);
+                        } else {
+                            counter.textContent = Math.floor(current).toLocaleString();
+                        }
+                    }, stepTime);
+                });
             }
 
-            function closeModal() {
-                popup.classList.remove('is-open');
-                popup.setAttribute('aria-hidden', 'true');
-                document.documentElement.style.overflow = '';
+            function checkCounter() {
+                if (!contents5 || counterStarted) return;
+
+                const rect = contents5.getBoundingClientRect();
+                const triggerPoint = window.innerHeight * 0.8;
+
+                if (rect.top < triggerPoint) {
+                    counterStarted = true;
+                    startCounter();
+                }
             }
 
-
-            loginLinks.forEach(link => {
-                link.addEventListener('click', (e) => {
+            window.addEventListener('scroll', checkCounter);
+            window.addEventListener('load', checkCounter);
+        </script>
+        <!-- 팝업에서 버튼 눌렀을 때 스크롤 다시 위로 올라가는 거 막기 -->
+        <script>
+            document.querySelectorAll('.popup_subbtn').forEach(btn => {
+                btn.addEventListener('click', function (e) {
                     e.preventDefault();
-                    openModal();
                 });
             });
-
-            overlay.addEventListener('click', closeModal);
-            closeBtns.forEach(btn => btn.addEventListener('click', closeModal));
-
-            document.addEventListener('keydown', (e) => {
-                if (!popup.classList.contains('is-open')) return;
-                if (e.key === 'Escape') closeModal();
-            });
-        })();
-    </script>
-
-
-    <!-- 미지의기록 -->
-    <script>
-        const counters = document.querySelectorAll('.count');
-        const contents5 = document.querySelector('.record');
-        let counterStarted = false;
-
-        function startCounter() {
-            counters.forEach(counter => {
-                const target = Number(counter.dataset.target);
-                let current = 0;
-                const duration = 1800;
-                const stepTime = 20;
-                const totalSteps = duration / stepTime;
-                const increment = target / totalSteps;
-
-                const timer = setInterval(() => {
-                    current += increment;
-
-                    if (current >= target) {
-                        counter.textContent = target.toLocaleString();
-                        clearInterval(timer);
-                    } else {
-                        counter.textContent = Math.floor(current).toLocaleString();
-                    }
-                }, stepTime);
-            });
-        }
-
-        function checkCounter() {
-            if (!contents5 || counterStarted) return;
-
-            const rect = contents5.getBoundingClientRect();
-            const triggerPoint = window.innerHeight * 0.8;
-
-            if (rect.top < triggerPoint) {
-                counterStarted = true;
-                startCounter();
-            }
-        }
-
-        window.addEventListener('scroll', checkCounter);
-        window.addEventListener('load', checkCounter);
-    </script>
-    <!-- 팝업에서 버튼 눌렀을 때 스크롤 다시 위로 올라가는 거 막기 -->
-    <script>
-        document.querySelectorAll('.popup_subbtn').forEach(btn => {
-            btn.addEventListener('click', function (e) {
-                e.preventDefault();
-            });
-        });
-    </script>
+        </script>
 </body>
 
 </html>
