@@ -2,1367 +2,350 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=1400px">
-    <title>미지</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-    <!-- aos js -->
-    <link rel="icon" href="./img/favicon.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="css/fullpage.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
 </head>
 
-
 <body>
-    <div id="wrap_wrap">
-        <div id="top"></div>
-        <div id="header_wrap"><!-- header -->
-            <!-- 백그라운드컬러 #F6F4EE -->
-            <div class="header">
-                <!-- 1320px/80px -->
-                <h1 class="gnb_logo"><!-- 70x70 왼쪽 -->
-                    <a href="#top"><img class="gnb_logo_img" src="./img/logo.png" alt="미지"></a>
-                </h1>
-                <div class="gnb_wrap"><!-- 중앙 -->
-                    <ul class="gnb">
-                        <li><a href="#section1">이주의미지</a></li>
-                        <li><a href="#section2">ARTICLES</a></li>
-                        <li><a href="#section3">FILM LINEUP</a></li>
-                        <li><a href="#section4">GOODS</a></li>
-                        <li><a href="#section5">COMMUNITY</a></li>
-                        <li><a href="#section6">ABOUT 미지</a></li>
-                    </ul>
+  <ul id="menu">
+    <li data-menuanchor="anchor1"><a href="#anchor1">INTRO</a></li>
+    <li data-menuanchor="anchor2"><a href="#anchor2">PORTFOLIO</a></li>
+    <li data-menuanchor="anchor3"><a href="#anchor3">ARTWORK</a></li>
+    <li data-menuanchor="anchor4"><a href="#anchor4">ABOUT ME</a></li>
+    <li data-menuanchor="anchor5"><a href="#anchor5">RESUME</a></li>
+  </ul>
 
-                </div>
-                <div class="util_wrap"> <!-- 오른쪽 -->
-                    <ul class="util">
-                        <li class="search">
-                            <form class="search_form" action="#" onsubmit="return false;">
-                                <input type="text" class="search_input" placeholder="Search">
-                                <button type="submit" class="search_btn" aria-label="search">
-                                    <img src="./img/gnb_search.png" alt="search">
-                                    <!-- 서치창 뜨도록 설정 -->
-                                </button>
-                            </form>
-                        </li>
-                        <li><a class="member" href="#"><img src="./img/gnb_member.png" alt="member"></a></li>
-                        <!-- 로그인창 뜨게 설정 -->
-                        <li><a class="login" href="#"><img class="login_img" src="./img/gnb_login.png" alt="login"></a>
-                        </li>
-                        <!-- 로그인창 뜨도록 설정 -->
-                    </ul>
-                </div>
-            </div>
+  <div id="fullpage">
+    <!-- 1 -->
+    <div class="section" id="section1">
+      <video id="introVideo" class="intro_video" autoplay muted loop playsinline preload="auto">
+        <source src="./video/vid.mp4" type="video/mp4">
+      </video>
+    </div>
+    <!-- /.1 -->
+
+    <!-- 2 -->
+    <div class="section" id="section2">
+      <div class="slide">
+        <div class="inner">
+          <h1>Portfolio</h1>
+          <ul class="portfolio">
+            <li>
+              <a href="https://padoisland.github.io/mizi/" target="_blank">
+                <img src="./images/home_th.png" alt="홈페이지 사진">
+                <h3>"미지" HOMEPAGE</h3>
+              </a>
+            </li>
+            <li>
+              <a href="./Ebook/ebook.html" target="_blank">
+                <img src="./images/bibx_th.png" alt="bibx 사진">
+                <h3>BI/BX GUIDE</h3>
+              </a>
+            </li>
+            <li>
+              <a href="./guide/web.html" target="_blank">
+                <img src="./images/web_th.png" alt="웹 사진">
+                <h3>WEB GUIDE</h3>
+              </a>
+            </li>
+            <li>
+              <a href="https://padoisland.github.io/aprilbridewine/" target="_blank">
+                <img src="./images/web2_th.png" alt="화이트와인 4월의 신부">
+                <h3>반응형 홈페이지</h3>
+              </a>
+            </li>
+            <li>
+              <a href="./artwork/detailpage01.html" target="_blank">
+                <img src="./images/.png" alt="망그러진곰 상점">
+                <h3>반응형 홈페이지</h3>
+              </a>
+            </li>
+            <li>
+              <a href="./artwork/detailpage01.html" target="_blank">
+                <img src="./images/.png" alt="준비중">
+                <h3>준비중</h3>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div id="visual_swiper"><!-- visual -->
-            <!-- Swiper -->
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./img/visual1.png" alt="visual1">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/visual2.png" alt="visual2">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/visual3.png" alt="visual3">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/visual4.png" alt="visual4">
-                    </div>
+      </div>
+    </div>
+    <!-- /.2 -->
+
+    <!-- 3 -->
+    <div class="section" id="section3">
+      <div class="inner">
+        <h1>Artwork</h1>
+        <ul class="art">
+          <li>
+            <a href="./detailpage/detailpage01.html" target="_blank">
+              <div class="art_box">
+                <img src="./images/detail_pg1.png" alt="아트1" class="art1">
+                <div class="art_text">
+                  <h3>상세페이지</h3>
+                  <p>솔가 여성용 멀티비타민&미네랄</p>
                 </div>
-                <div class="swiper-pagination"></div>
-            </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#none" class="open-popup" data-popup="pop2">
+              <div class="art_box">
+                <img src="./images/cardnews1.png" alt="아트2" class="art2">
+                <div class="art_text">
+                  <h3>카드뉴스</h3>
+                  <p>기후에너지 환경부와<br>함께하는 이야기</p>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#none" class="open-popup" data-popup="pop3">
+              <div class="art_box">
+                <img src="./images/cardnews2.png" alt="아트3" class="art3">
+                <div class="art_text">
+                  <h3>카드뉴스</h3>
+                  <p>청년 일대일 맞춤형 재무상담</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- /.3 -->
+    <!-- 4 -->
+    <div class="section" id="section4">
+      <div class="inner">
+        <img src="./images/my.png" alt="사진" class="my">
+
+        <div class="about">
+          <h1><span class="aboutme">About Me</span></h1>
+
+          <h2>당연함 속에 숨겨진 물음표를 발견하는
+            <br><span class="aboutmebold">디자이너 정윤정입니다</span>
+          </h2>
+
+          <p class="about_text">모든 브랜드는 저마다의 '물음표'를 안고 시작한다고 생각합니다.
+            <br>저는 그 물음표가 무엇인지 깊이 고민하고, 브랜드가 가진 고유한 이야기와
+            <br>가치를 먼저 이해하려고 합니다.
+            <br>단순히 보기 좋은 디자인을 만드는 데 그치지 않고, 브랜드가 전하고자 하는 메시지를
+            <br>매력적인 시각 언어로 치환해 더 선명하고 설득력 있게 전달하고자 합니다.
+          </p>
+
+          <p class="about_info">
+            <span>NAME</span> Jeong YunJeong
+            <br>
+            <span>phone</span> (+82) 10-4861-9256
+            <br>
+            <span>E-MAIL</span> <a href="mailto:padoisland@gmail.com">padoisland@gmail.com</a>
+          </p>
         </div>
+      </div>
+    </div>
+    <!-- /.4 -->
 
+    <!-- 5 -->
+    <div class="section" id="section5">
+      <div class="inner">
+        <h1>My Resume</h1>
+        <ul class="resume">
+          <li>
+            <h6>날짜</h6>
+            <h3>회사명, 자격증명</h3>
+            <p>설명</p>
+          </li>
+          <li>
+            <h6>날짜</h6>
+            <h3>회사명, 자격증명</h3>
+            <p>설명</p>
+          </li>
+          <li>
+            <h6>날짜</h6>
+            <h3>회사명, 자격증명</h3>
+            <p>설명</p>
+          </li>
+        </ul>
+        <h1>My Skill</h1>
 
-
-
-
-        <div id="section1"> <!-- section1 이주의미지 -->
-            <div class="contents1_wrap" data-aos="fade-up" data-aos-duration="900" data-aos-offset="120">
-                <h1><img src="./img/title_thisweek.png" alt="thisweek"></h1>
-                <div class="contents1">
-                    <div class="contents1_box">
-                        <!-- 너비 1240/높이700px-->
-                        <div class="c1box_left" data-aos="fade-up" data-aos-delay="0">
-                            <!-- 큐레이션포스터 500/700-->
-                            <img class="poster_img" src="./img/florida_project_p.png" alt="florida_project_poster">
-                            <img class="curator_label" src="./img/curator_fsg.png" alt="이주의 큐레이터">
-                        </div>
-                        <div class="c1box_right" data-aos="fade-up" data-aos-delay="200">
-                            <!-- 큐레이션영화제목 400/80 -->
-                            <h2><img src="./img/c_movie_title1.png" alt="c_movie_title1"></h2>
-                            <div class="movie_contents">
-                                <div class="movie_info">
-                                    <h5>개봉일</h5>
-                                    <p>2018. 03. 07.</p>
-                                    <h5>러닝타임</h5>
-                                    <p>111분</p>
-                                </div>
-                                <div class="movie_info">
-                                    <h5>관람가</h5>
-                                    <p><img src="./img/rated.png" alt="rated"></p>
-                                </div>
-                                <div class="movie_info">
-                                    <h5>감독/출연</h5>
-                                    <p>션 베이커, 윌렘 대포, 브루클린 프린스, 브리아 비나이트</p>
-                                </div>
-                                <p class="plot">환상의 나라 디즈니월드 바로 건너편, 보랏빛 모텔 ‘매직 캐슬’에는 사랑스러운 6살 악동 무니와 철없는 엄마 핼리가 살고
-                                    있습니다.
-                                    어른들에겐 하루하루가 고단한
-                                    현실이지만, 무니와 친구들에게 이곳은 매일이 신나는 모험과 장난으로 가득한 세상입니다. 하지만 든든한 모텔 매니저 바비의 따뜻한 배려에도 불구하고,
-                                    핼리가
-                                    감당해야 할 가혹한 현실은 점차 아이들의 무지개빛 세계를 위협합니다. 가장 눈부신 여름 햇살 아래, 비극과 희극이 뒤섞인 이들의 진짜 이야기가
-                                    펼쳐집니다.
-                                </p>
-                                <div class="c_review_box" data-aos="fade-up" data-aos-delay="300">
-                                    <img class="rating_user" src="./img/user_icon1.png" alt="user_icon1">
-                                    <div class="rating_text">
-                                        <p>환상의 나라 디즈니월드 바로 밖, 찬란한 파스텔톤 컬러감 속 감춰진 가장 시리고 아픈 현실.</p>
-                                    </div>
-                                    <div class="rating_clover">
-                                        <!-- 20/20 -->
-                                        <img src="./img/rating.png" alt="rating_clover">
-                                        <img src="./img/rating.png" alt="rating_clover">
-                                        <img src="./img/rating.png" alt="rating_clover">
-                                        <img src="./img/rating.png" alt="rating_clover">
-                                        <img src="./img/rating.png" alt="rating_clover">
-                                    </div>
-                                </div>
-                                <div class="c_review_box" data-aos="fade-up" data-aos-delay="400">
-                                    <img class="rating_user" src="./img/user_icon2.png" alt="user_icon2">
-                                    <div class="rating_text">
-                                        <p>무지개 끝에 황금이 있다고 믿는 아이들의 손을 잡고, 팍팍한 현실 밖으로 영원히 함께 도망치고 싶어지는 마법.</p>
-                                    </div>
-                                    <div class="rating_clover">
-                                        <img src="./img/rating.png" alt="rating_clover">
-                                        <img src="./img/rating.png" alt="rating_clover">
-                                        <img src="./img/rating.png" alt="rating_clover">
-                                        <img src="./img/rating.png" alt="rating_clover">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="skill_wrap">
+          <ul class="skill_list">
+            <li>
+              <div class="chart" data-percent="95">
+                <div class="chart_circle">
+                  <span class="title"><b>95%</b><br>Photoshop</span>
                 </div>
-                <div class="contents2_wrap" data-aos="fade-up" data-aos-duration="900" data-aos-offset="120">
-                    <!-- 1320/650 -->
-                    <div class="contents2">
-                        <!-- 1240/500 -->
-                        <h1><img src="./img/title_lastweek.png" alt="thisweek"></h1>
-                        <div class="contents2_box">
-
-                            <div class="movie_c" data-aos="fade-down-right">
-                                <a href="javascript:return false;">
-                                    <h4>아코디언 도어</h4>
-
-                                    <div class="movie_c_sub">
-                                        <h5>주름진 세계의 틈 :</h5>
-                                        <p>현실과 환상이 교차하는 116분의 마법</p>
-                                    </div>
-
-                                    <img class="movie_c_img" src="./img/c_movie_accordion_door_poster.png" alt="아코디언도어">
-                                    <img class="movie_c_label2" src="./img/curator_bumbleb.png" alt="큐레이터 범블비">
-
-                                    <div class="movie_hover_txt">
-                                        <span class="movie_hover_title">아코디언도어</span>
-                                        <p class="curator">큐레이터</p>
-                                        <p>halfmoon</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="movie_c" data-aos="fade-down">
-                                <a href="javascript:return false;">
-                                    <h4>우리들</h4>
-
-                                    <div class="movie_c_sub">
-                                        <h5>주름진 세계의 틈 :</h5>
-                                        <p>현실과 환상이 교차하는 116분의 마법</p>
-                                    </div>
-
-                                    <img class="movie_c_img2" src="./img/c_movie_The World of Us_poster.jpeg" alt="우리들">
-                                    <img class="movie_c_label2" src="./img/curator_pianogirl.png" alt="큐레이터 pianogirl">
-
-                                    <div class="movie_hover_txt">
-                                        <span class="movie_hover_title">우리들</span>
-                                        <p class="curator">큐레이터</p>
-                                        <p>pianogirl</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="movie_c" data-aos="fade-down-left">
-                                <a href="javascript:return false;">
-                                    <h4>메기</h4>
-
-                                    <div class="movie_c_sub">
-                                        <h5>주름진 세계의 틈 :</h5>
-                                        <p>현실과 환상이 교차하는 116분의 마법</p>
-                                    </div>
-
-                                    <img class="movie_c_img3" src="./img/c_movie_Maggie_poster.jpg" alt="메기">
-                                    <img class="movie_c_label2" src="./img/curator_sky.png" alt="큐레이터 하늘">
-
-                                    <div class="movie_hover_txt">
-                                        <span class="movie_hover_title">메기</span>
-                                        <p class="curator">큐레이터</p>
-                                        <p>하늘</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </li>
+            <li>
+              <div class="chart" data-percent="95">
+                <div class="chart_circle">
+                  <span class="title"><b>95%</b><br>Illustrator</span>
                 </div>
-            </div> <!-- contents2_wrap end -->
-        </div> <!-- contents1_wrap end -->
-        <!-- section1 end -->
-
-
-
-
-        <div class="banner_section1"> <!-- 중간배너 -->
-            <div class="event_banner_wrap">
-                <a href="javascript:return false;">
-                    <img src="./img/event_banner.png" alt="미지 오프라인 상영회 배너" class="event_banner_default">
-                    <img src="./img/event_banner_h.png" alt="미지 오프라인 상영회 배너" class="event_banner_hover">
-                </a>
-            </div>
+              </div>
+            </li>
+            <li>
+              <div class="chart" data-percent="95">
+                <div class="chart_circle">
+                  <span class="title"><b>95%</b><br>InDesign</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="chart" data-percent="75">
+                <div class="chart_circle">
+                  <span class="title"><b>75%</b><br>HTML/CSS/JS</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="chart" data-percent="95">
+                <div class="chart_circle">
+                  <span class="title"><b>95%</b><br>Premiere-pro</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="chart" data-percent="95">
+                <div class="chart_circle">
+                  <span class="title"><b>95%</b><br>After-effects</span>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
+      </div>
+    </div>
+    <!-- /.5 -->
 
+    <!-- 6 -->
+    <div class="section fp-auto-height" id="section6">
+      <div class="myContent">
+        <p>Copyright ⓒ2026 JeongYunJeong. All Rights Reserved.</p>
+      </div>
+    </div>
+    <!-- /.6 -->
 
+  </div>
 
+  <!-- 팝업 -->
+  <div class="popup pop1">
+    <p>ⓧ</p>
+    <div>
+      <img src="./images/pic01.jpg" alt="이미지">
+      <ul>
+        <li>
+          <h5>제목</h5>
+          <p>내용</p>
+        </li>
+        <li>
+          <p>사용툴 : Photoshop, Illustrator</p>
+          <p>기여도 : 100%</p>
+        </li>
+      </ul>
+    </div>
+  </div>
 
+  <!-- 팝업 -->
+  <div class="popup pop2">
+    <button type="button" class="popup_close">ⓧ</button>
 
-        <div id="section2"> <!-- section2 영화소식/영화리뷰 -->
-            <div class="contents3_wrap" data-aos="fade-up" data-aos-duration="900" data-aos-offset="120">
-                <h1><img src="./img/title_articles.png" alt="articles"></h1>
-                <div class="contents3">
-                    <div class="contents3_box1" data-aos="fade-right">
-                        <!-- 영화소식/너비 600/높이650px-->
-                        <h2><img src="./img/movie_article_title.png" alt="movie_article_title"></h2>
-                        <a href="javascript:return false;" class="articles_link" href="#">
-                            <img class="article_img" src="./img/articles1.jpg" alt="articles">
-                            <!-- 기사 사진 600/380 -->
-                            <div class="articles_link">
-
-                                <h3>전주, 독립영화 후반지원 나서</h3>
-                                <p>전주시가 독립영화 창작 환경 개선을 위한 후반제작 지원에 나선다. 전주정보문화산업진흥원과 전주영화제작소는 ‘2026년 상반기 전주 영화 후반제작지원
-                                    사업’ 공모를 진행하고, 장·단편 및 DCP 제작 지원작을 선정할 계획이다. 색보정과 사운드 믹싱 등 전문 후반작업을 현물로 제공해 완성도를 높이고,
-                                    국내외 영화제 진출까지 이어지는 발판을 마련한다.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="contents3_box2" data-aos="fade-left">
-                        <h2><img src="./img/movie_review_title.png" alt="movie_article_title"></h2>
-
-                        <div class="review_list">
-                            <a href="javascript:return false;" class="review_box" href="#">
-                                <div class="review_left">
-                                    <h3 class="review_title">쾌조의 스타트, 몹시 모호해진 결승선</h3>
-                                    <p class="review_sub">
-                                        변주가 지나치게 불친절하고 모호해서, 목적지 없이 맴돌다 쓸쓸하게 끝나버린 듯한 뒷맛을 남기네요.
-                                    </p>
-                                    <div class="review_meta">
-                                        <img class="review_user_icon" src="./img/user_icon3.png" alt="user icon3">
-                                        <span class="review_user">몽상가</span>
-                                        <span class="review_rate"><img src="./img/rating.png" alt="review"></span>
-                                        <span class="review_rate"><img src="./img/rating.png" alt="review"></span>
-                                        <span class="review_rate"><img src="./img/rating.png" alt="review"></span>
-                                    </div>
-                                </div>
-                                <div class="review_right">
-                                    <img src="./img/review_thumb1.jpg" alt="리뷰 썸네일 1">
-                                    <span class="review_badge">아워바디</span>
-                                </div>
-                            </a>
-
-                            <a href="javascript:return false;" class="review_box" href="#">
-                                <div class="review_left">
-                                    <h3 class="review_title">별처럼 희미하지만, 모래처럼 오래 남는 감정의 기록</h3>
-                                    <p class="review_sub">
-                                        화려한 영화 열 편보다 이 조용한 한 편이 훨씬 든든하네요. 머리 싹 비우고 멍때리기 딱 좋은 숨은 보석을 찾았어요.</p>
-                                    <div class="review_meta">
-                                        <img class="review_user_icon" src="./img/user_icon4.png" alt="user icon4">
-                                        <span class="review_user">caramel</span>
-                                        <span class="review_rate"><img src="./img/rating.png" alt="review"></span>
-                                        <span class="review_rate"><img src="./img/rating.png" alt="review"></span>
-                                        <span class="review_rate"><img src="./img/rating.png" alt="review"></span>
-                                        <span class="review_rate"><img src="./img/rating.png" alt="review"></span>
-                                        <span class="review_rate"><img src="./img/rating.png" alt="review"></span>
-                                    </div>
-                                </div>
-                                <div class="review_right">
-                                    <img src="./img/review_thumb2.jpg" alt="리뷰 썸네일 2">
-                                    <span class="review_badge">별과모래</span>
-                                </div>
-                            </a>
-
-                            <a href="javascript:return false;" class="review_box" href="#">
-                                <div class="review_left">
-                                    <h3 class="review_title">멈춘 낭만 대신 펄떡이는 열다섯의 여름!</h3>
-                                    <p class="review_sub">
-                                        비바람을 견디는 동상 곁에서, 씩씩하게 자기 몫의 여름을 살아내는 주인공을 힘껏 응원하게 되는 영화입니다.
-                                    </p>
-                                    <div class="review_meta">
-                                        <img class="review_user_icon" src="./img/user_icon5.png" alt="user icon5">
-                                        <span class="review_user">쏘녀</span>
-                                        <span class="review_rate"><img src="./img/rating.png" alt="review"></span>
-                                        <span class="review_rate"><img src="./img/rating.png" alt="review"></span>
-                                        <span class="review_rate"><img src="./img/rating.png" alt="review"></span>
-                                        <span class="review_rate"><img src="./img/rating.png" alt="review"></span>
-                                    </div>
-                                </div>
-                                <div class="review_right">
-                                    <img src="./img/review_thumb3.jpg" alt="리뷰 썸네일 3">
-                                    <span class="review_badge">소양강소녀</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="popup_inner">
+      <div class="popup_swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/card01.png" alt="기후에너지 환경부 카드뉴스 1">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/card02.png" alt="기후에너지 환경부 카드뉴스 2">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/card03.png" alt="기후에너지 환경부 카드뉴스 3">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/card04.png" alt="기후에너지 환경부 카드뉴스 4">
+          </div>
         </div>
 
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
 
+      <ul class="popup_info">
+        <li>
+          <h5>기후에너지 환경부와 함께하는 이야기</h5>
+          <p>기후에너지환경부의 녹색대전환 메시지를 보다 쉽고 친근하게 전달하기 위해 리디자인한 카드뉴스 작업입니다.
+            3D 캐릭터와 밝은 컬러를 활용해 어렵게 느껴질 수 있는 환경 정책 정보를 친숙하게 풀어내고, 핵심 내용이 한눈에 들어오도록 정보 구조를 재정리했습니다.</p>
+        </li>
+        <li>
+          <p>사용툴 : Photoshop, Illustrator</p>
+          <p>기여도 : 100%</p>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-        <div class="contents4_wrap" data-aos="fade-up" data-aos-duration="900" data-aos-offset="120">
-            <!-- news -->
-            <h1><img src="./img/title_news.png" alt="news"></h1>
+  <div class="popup pop3">
+    <button type="button" class="popup_close">ⓧ</button>
 
-            <div class="contents4">
-                <!-- notice / event -->
-                <div class="contents4_box notice_box" data-aos="fade-up-right">
-                    <!-- notice -->
-                    <h2><img src="./img/notice.png" alt="notice"></h2>
-
-                    <div class="notice_list">
-                        <a href="javascript:return false;" class="notice_item">
-                            <h3>매주 새로운 시선으로 영화를 소개할 미지의 큐레이터를 찾습니다.</h3>
-                            <p>
-                                매주 새로운 주제로 숨겨진 보석 같은 영화를 발굴하고 소개해주실 큐레이터를 상시 모집하고 있습니다.
-                                여러분만의 특별한 취향과 시선을 기다리고 있으니, 영화를 사랑하시는 분들의 많은 지원 부탁드립니다.
-                            </p>
-                        </a>
-
-                        <a href="javascript:return false;" class="notice_item">
-                            <h3>미지 리미티드 팝업 시네마 &lt;Archive to Screen&gt; 안내 및 상영작 설문 조사</h3>
-                            <p>
-                                미지가 준비한 리미티드 팝업 시네마 &lt;Archive to Screen&gt;이 곧 열립니다.
-                                함께 보고 싶은 독립·예술영화가 있다면 상영작 설문 조사에 참여해 주세요.
-                                여러분의 취향과 의견을 반영해 더 특별한 상영 프로그램을 만들어가겠습니다.
-                            </p>
-                        </a>
-
-                        <a href="javascript:return false;" class="notice_item">
-                            <h3>[안내] 사이트 정기 점검에 따른 홈페이지 이용 일시중단 사전 안내</h3>
-                            <p>
-                                보다 안정적인 서비스 제공을 위해 홈페이지 정기 점검이 진행될 예정입니다.
-                                점검 시간 동안에는 사이트 접속 및 일부 서비스 이용이 일시적으로 제한될 수 있습니다.
-                                이용에 불편을 드리게 된 점 양해 부탁드립니다.
-                            </p>
-                        </a>
-
-                        <a href="javascript:return false;" class="notice_item">
-                            <h3>영화의 여운과 감동을 온전히 나누기 위한 리뷰 스포일러 주의 및 보호 설정 안내</h3>
-                            <p>
-                                미지는 모두가 편안하게 영화의 감상을 나눌 수 있는 공간이 되기를 바랍니다.
-                                리뷰 작성 시에는 작품의 주요 전개나 결말이 드러나는 스포일러성 내용에 주의해 주세요.
-                                서로의 감상 경험을 지킬 수 있도록 배려 있는 작성 부탁드립니다.
-                            </p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="contents4_box event_box" data-aos="fade-up-left">
-                    <!-- event -->
-                    <h2><img src="./img/event.png" alt="event"></h2>
-
-                    <div class="event_list">
-                        <div class="event_item">
-                            <a href="javascript:return false;" class="event_link">
-                                <div class="event_img_box">
-                                    <img src="./img/event_s1.png" alt="이벤트 배너 1">
-                                </div>
-                                <p>미지 x 아트하우스 독립영화 특별전 &gt;SOMETHING SPECIAL&gt; 특별 초대 이벤트</p>
-                            </a>
-                        </div>
-
-                        <div class="event_item">
-                            <a href="javascript:return false;" class="event_link">
-                                <div class="event_img_box">
-                                    <img src="./img/event_s2.png" alt="이벤트 배너 2">
-                                </div>
-                                <p>영화 &lt;극장의 시간들&gt; 친필 사인 포스터 이벤트</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><!-- section2 end -->
-
-
-
-        <div class="record_wrap"><!-- 미지의기록 -->
-            <h1><img src="./img/title_record.png" alt="미지의 기록"></h1>
-
-            <div class="record">
-                <div class="record_box">
-                    <div class="record_num count" data-target="95">0</div>
-                    <p>큐레이션</p>
-                </div>
-
-                <div class="record_box">
-                    <div class="record_num count" data-target="1792">0</div>
-                    <p>작성된 리뷰</p>
-                </div>
-
-                <div class="record_box">
-                    <div class="record_num count" data-target="151">0</div>
-                    <p>참여 회원</p>
-                </div>
-            </div>
+    <div class="popup_inner">
+      <div class="popup_swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/card05.png" alt="청년 재무상담 카드뉴스 1">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/card06.png" alt="청년 재무상담 카드뉴스 2">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/card07.png" alt="청년 재무상담 카드뉴스 3">
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/card08.png" alt="청년 재무상담 카드뉴스 4">
+          </div>
         </div>
 
-        <div id="section3"><!-- section3 -->
-            <!-- FILM LINEUP / 작은 배너2개-->
-            <h1><img src="./img/title_filmlineup.png" alt="필름 라인업"></h1>
-            <div class="lineup_wrap">
-                <!-- 배경색 -->
-
-                <div id="slide">
-                    <div class="slide_inner">
-                        <ul>
-                            <li>
-                                <a href="javascript:return false;" class="lineup_item">
-                                    <div class="lineup_poster_wrap">
-                                        <div class="lineup_poster_box">
-                                            <img src="./img/l_movie1.png" alt="나는 갱년기다" class="lineup_poster">
-                                            <div class="lineup_hover_text">
-                                                <span class="lineup_hover_title">나는 갱년기다</span>
-                                                <span class="lineup_hover_open">1월 21일 개봉</span>
-                                            </div>
-                                        </div>
-                                        <img src="./img/rated_all.png" alt="전체" class="lineup_badge">
-                                    </div>
-                                    <p class="lineup_title">나는 갱년기다</p>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:return false;" class="lineup_item">
-                                    <div class="lineup_poster_wrap">
-                                        <div class="lineup_poster_box">
-                                            <img src="./img/l_movie2.png" alt="슈가" class="lineup_poster">
-                                            <div class="lineup_hover_text">
-                                                <span class="lineup_hover_title">슈가</span>
-                                                <span class="lineup_hover_open">1월 21일 개봉</span>
-                                            </div>
-                                        </div>
-                                        <img src="./img/rated_all.png" alt="전체" class="lineup_badge">
-                                    </div>
-                                    <p class="lineup_title">슈가</p>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:return false;" class="lineup_item">
-                                    <div class="lineup_poster_wrap">
-                                        <div class="lineup_poster_box">
-                                            <img src="./img/l_movie3.jpg" alt="허밍" class="lineup_poster">
-                                            <div class="lineup_hover_text">
-                                                <span class="lineup_hover_title">허밍</span>
-                                                <span class="lineup_hover_open">2월 4일 개봉</span>
-                                            </div>
-                                        </div>
-                                        <img src="./img/rated_15.png" alt="15세" class="lineup_badge">
-                                    </div>
-                                    <p class="lineup_title">허밍</p>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:return false;" class="lineup_item">
-                                    <div class="lineup_poster_wrap">
-                                        <div class="lineup_poster_box">
-                                            <img src="./img/l_movie4.png" alt="겨울의 빛" class="lineup_poster">
-                                            <div class="lineup_hover_text">
-                                                <span class="lineup_hover_title">겨울의 빛</span>
-                                                <span class="lineup_hover_open">2월 4일 개봉</span>
-                                            </div>
-                                        </div>
-                                        <img src="./img/rated_15.png" alt="15세" class="lineup_badge">
-                                    </div>
-                                    <p class="lineup_title">겨울의 빛</p>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:return false;" class="lineup_item">
-                                    <div class="lineup_poster_wrap">
-                                        <div class="lineup_poster_box">
-                                            <img src="./img/l_movie5.jpg" alt="레이의 겨울방학" class="lineup_poster">
-                                            <div class="lineup_hover_text">
-                                                <span class="lineup_hover_title">레이의 겨울방학</span>
-                                                <span class="lineup_hover_open">2월 25일 개봉</span>
-                                            </div>
-                                        </div>
-                                        <img src="./img/rated_all.png" alt="전체" class="lineup_badge">
-                                    </div>
-                                    <p class="lineup_title">레이의 겨울방학</p>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:return false;" class="lineup_item">
-                                    <div class="lineup_poster_wrap">
-                                        <div class="lineup_poster_box">
-                                            <img src="./img/l_movie6.jpg" alt="간첩 사냥" class="lineup_poster">
-                                            <div class="lineup_hover_text">
-                                                <span class="lineup_hover_title">간첩 사냥</span>
-                                                <span class="lineup_hover_open">2월 4일 개봉</span>
-                                            </div>
-                                        </div>
-                                        <img src="./img/rated_15.png" alt="15세" class="lineup_badge">
-                                    </div>
-                                    <p class="lineup_title">간첩 사냥</p>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:return false;" class="lineup_item">
-                                    <div class="lineup_poster_wrap">
-                                        <div class="lineup_poster_box">
-                                            <img src="./img/l_movie7.jpg" alt="오, 발렌타인" class="lineup_poster">
-                                            <div class="lineup_hover_text">
-                                                <span class="lineup_hover_title">오, 발렌타인</span>
-                                                <span class="lineup_hover_open">3월 11일 개봉</span>
-                                            </div>
-                                        </div>
-                                        <img src="./img/rated_15.png" alt="15세" class="lineup_badge">
-                                    </div>
-                                    <p class="lineup_title">오, 발렌타인</p>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:return false;" class="lineup_item">
-                                    <div class="lineup_poster_wrap">
-                                        <div class="lineup_poster_box">
-                                            <img src="./img/l_movie8.jpg" alt="극장의 시간들" class="lineup_poster">
-                                            <div class="lineup_hover_text">
-                                                <span class="lineup_hover_title">극장의 시간들</span>
-                                                <span class="lineup_hover_open">3월 18일 개봉</span>
-                                            </div>
-                                        </div>
-                                        <img src="./img/rated_all.png" alt="전체" class="lineup_badge">
-                                    </div>
-                                    <p class="lineup_title">극장의 시간들</p>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:return false;" class="lineup_item">
-                                    <div class="lineup_poster_wrap">
-                                        <div class="lineup_poster_box">
-                                            <img src="./img/l_movie9.jpg" alt="극장의 시간들" class="lineup_poster">
-                                            <div class="lineup_hover_text">
-                                                <span class="lineup_hover_title">그 사람 경허선사</span>
-                                                <span class="lineup_hover_open">3월 19일 개봉</span>
-                                            </div>
-                                        </div>
-                                        <img src="./img/rated_12.png" alt="12세" class="lineup_badge">
-                                    </div>
-                                    <p class="lineup_title">그 사람 경허선사</p>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:return false;" class="lineup_item">
-                                    <div class="lineup_poster_wrap">
-                                        <div class="lineup_poster_box">
-                                            <img src="./img/l_movie10.png" alt="열여덟 청춘" class="lineup_poster">
-                                            <div class="lineup_hover_text">
-                                                <span class="lineup_hover_title">열여덟 청춘</span>
-                                                <span class="lineup_hover_open">3월 25일 개봉</span>
-                                            </div>
-                                        </div>
-                                        <img src="./img/rated_12.png" alt="12세" class="lineup_badge">
-                                    </div>
-                                    <p class="lineup_title">열여덟 청춘</p>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:return false;" class="lineup_item">
-                                    <div class="lineup_poster_wrap">
-                                        <div class="lineup_poster_box">
-                                            <img src="./img/l_movie11.jpg" alt="파이 굽는 엄마" class="lineup_poster">
-                                            <div class="lineup_hover_text">
-                                                <span class="lineup_hover_title">파이 굽는 엄마</span>
-                                                <span class="lineup_hover_open">3월 26일 개봉</span>
-                                            </div>
-                                        </div>
-                                        <img src="./img/rated_15.png" alt="15세" class="lineup_badge">
-                                    </div>
-                                    <p class="lineup_title">파이 굽는 엄마</p>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:return false;" class="lineup_item">
-                                    <div class="lineup_poster_wrap">
-                                        <div class="lineup_poster_box">
-                                            <img src="./img/l_movie12.jpg" alt="새벽의 탱고" class="lineup_poster">
-                                            <div class="lineup_hover_text">
-                                                <span class="lineup_hover_title">새벽의 탱고</span>
-                                                <span class="lineup_hover_open">4월 22일 개봉</span>
-                                            </div>
-                                        </div>
-                                        <img src="./img/rated_all.png" alt="15세" class="lineup_badge">
-                                    </div>
-                                    <p class="lineup_title">새벽의 탱고</p>
-                                </a>
-                            </li>
-
-                        </ul>
-
-                        <ul>
-                            <li>
-                                <a href="javascript:return false;" class="lineup_item">
-                                    <div class="lineup_poster_wrap">
-                                        <div class="lineup_poster_box">
-                                            <img src="./img/l_movie1.png" alt="나는 갱년기다" class="lineup_poster">
-                                            <div class="lineup_hover_text">
-                                                <span class="lineup_hover_title">나는 갱년기다</span>
-                                                <span class="lineup_hover_open">1월 21일 개봉</span>
-                                            </div>
-                                        </div>
-                                        <img src="./img/rated_all.png" alt="전체" class="lineup_badge">
-                                    </div>
-                                    <p class="lineup_title">나는 갱년기다</p>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:return false;" class="lineup_item">
-                                    <div class="lineup_poster_wrap">
-                                        <div class="lineup_poster_box">
-                                            <img src="./img/l_movie2.png" alt="슈가" class="lineup_poster">
-                                            <div class="lineup_hover_text">
-                                                <span class="lineup_hover_title">슈가</span>
-                                                <span class="lineup_hover_open">1월 21일 개봉</span>
-                                            </div>
-                                        </div>
-                                        <img src="./img/rated_all.png" alt="전체" class="lineup_badge">
-                                    </div>
-                                    <p class="lineup_title">슈가</p>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:return false;" class="lineup_item">
-                                    <div class="lineup_poster_wrap">
-                                        <div class="lineup_poster_box">
-                                            <img src="./img/l_movie3.jpg" alt="허밍" class="lineup_poster">
-                                            <div class="lineup_hover_text">
-                                                <span class="lineup_hover_title">허밍</span>
-                                                <span class="lineup_hover_open">2월 4일 개봉</span>
-                                            </div>
-                                        </div>
-                                        <img src="./img/rated_15.png" alt="15세" class="lineup_badge">
-                                    </div>
-                                    <p class="lineup_title">허밍</p>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:return false;" class="lineup_item">
-                                    <div class="lineup_poster_wrap">
-                                        <div class="lineup_poster_box">
-                                            <img src="./img/l_movie4.png" alt="겨울의 빛" class="lineup_poster">
-                                            <div class="lineup_hover_text">
-                                                <span class="lineup_hover_title">겨울의 빛</span>
-                                                <span class="lineup_hover_open">2월 4일 개봉</span>
-                                            </div>
-                                        </div>
-                                        <img src="./img/rated_15.png" alt="15세" class="lineup_badge">
-                                    </div>
-                                    <p class="lineup_title">겨울의 빛</p>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:return false;" class="lineup_item">
-                                    <div class="lineup_poster_wrap">
-                                        <div class="lineup_poster_box">
-                                            <img src="./img/l_movie5.jpg" alt="레이의 겨울방학" class="lineup_poster">
-                                            <div class="lineup_hover_text">
-                                                <span class="lineup_hover_title">레이의 겨울방학</span>
-                                                <span class="lineup_hover_open">2월 25일 개봉</span>
-                                            </div>
-                                        </div>
-                                        <img src="./img/rated_all.png" alt="전체" class="lineup_badge">
-                                    </div>
-                                    <p class="lineup_title">레이의 겨울방학</p>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:return false;" class="lineup_item">
-                                    <div class="lineup_poster_wrap">
-                                        <div class="lineup_poster_box">
-                                            <img src="./img/l_movie6.jpg" alt="간첩 사냥" class="lineup_poster">
-                                            <div class="lineup_hover_text">
-                                                <span class="lineup_hover_title">간첩 사냥</span>
-                                                <span class="lineup_hover_open">2월 4일 개봉</span>
-                                            </div>
-                                        </div>
-                                        <img src="./img/rated_15.png" alt="15세" class="lineup_badge">
-                                    </div>
-                                    <p class="lineup_title">간첩 사냥</p>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:return false;" class="lineup_item">
-                                    <div class="lineup_poster_wrap">
-                                        <div class="lineup_poster_box">
-                                            <img src="./img/l_movie7.jpg" alt="오, 발렌타인" class="lineup_poster">
-                                            <div class="lineup_hover_text">
-                                                <span class="lineup_hover_title">오, 발렌타인</span>
-                                                <span class="lineup_hover_open">3월 11일 개봉</span>
-                                            </div>
-                                        </div>
-                                        <img src="./img/rated_15.png" alt="15세" class="lineup_badge">
-                                    </div>
-                                    <p class="lineup_title">오, 발렌타인</p>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:return false;" class="lineup_item">
-                                    <div class="lineup_poster_wrap">
-                                        <div class="lineup_poster_box">
-                                            <img src="./img/l_movie8.jpg" alt="극장의 시간들" class="lineup_poster">
-                                            <div class="lineup_hover_text">
-                                                <span class="lineup_hover_title">극장의 시간들</span>
-                                                <span class="lineup_hover_open">3월 18일 개봉</span>
-                                            </div>
-                                        </div>
-                                        <img src="./img/rated_all.png" alt="전체" class="lineup_badge">
-                                    </div>
-                                    <p class="lineup_title">극장의 시간들</p>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:return false;" class="lineup_item">
-                                    <div class="lineup_poster_wrap">
-                                        <div class="lineup_poster_box">
-                                            <img src="./img/l_movie9.jpg" alt="극장의 시간들" class="lineup_poster">
-                                            <div class="lineup_hover_text">
-                                                <span class="lineup_hover_title">그 사람 경허선사</span>
-                                                <span class="lineup_hover_open">3월 19일 개봉</span>
-                                            </div>
-                                        </div>
-                                        <img src="./img/rated_12.png" alt="12세" class="lineup_badge">
-                                    </div>
-                                    <p class="lineup_title">그 사람 경허선사</p>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:return false;" class="lineup_item">
-                                    <div class="lineup_poster_wrap">
-                                        <div class="lineup_poster_box">
-                                            <img src="./img/l_movie10.jpg" alt="열여덟 청춘" class="lineup_poster">
-                                            <div class="lineup_hover_text">
-                                                <span class="lineup_hover_title">열여덟 청춘</span>
-                                                <span class="lineup_hover_open">3월 25일 개봉</span>
-                                            </div>
-                                        </div>
-                                        <img src="./img/rated_12.png" alt="12세" class="lineup_badge">
-                                    </div>
-                                    <p class="lineup_title">열여덟 청춘</p>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:return false;" class="lineup_item">
-                                    <div class="lineup_poster_wrap">
-                                        <div class="lineup_poster_box">
-                                            <img src="./img/l_movie11.jpg" alt="파이 굽는 엄마" class="lineup_poster">
-                                            <div class="lineup_hover_text">
-                                                <span class="lineup_hover_title">파이 굽는 엄마</span>
-                                                <span class="lineup_hover_open">3월 26일 개봉</span>
-                                            </div>
-                                        </div>
-                                        <img src="./img/rated_all.png" alt="전체" class="lineup_badge">
-                                    </div>
-                                    <p class="lineup_title">파이 굽는 엄마</p>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="javascript:return false;" class="lineup_item">
-                                    <div class="lineup_poster_wrap">
-                                        <div class="lineup_poster_box">
-                                            <img src="./img/l_movie12.jpg" alt="새벽의 탱고" class="lineup_poster">
-                                            <div class="lineup_hover_text">
-                                                <span class="lineup_hover_title">새벽의 탱고</span>
-                                                <span class="lineup_hover_open">4월 22일 개봉</span>
-                                            </div>
-                                        </div>
-                                        <img src="./img/rated_all.png" alt="15세" class="lineup_badge">
-                                    </div>
-                                    <p class="lineup_title">새벽의 탱고</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- slide_inner E -->
-                </div>
-
-            </div>
-
-        </div><!-- section3 end -->
-
-        <div class="esb_wrap"> <!-- 이벤트 작은 중간 배너 -->
-            <!-- event s size banner -->
-            <div class="es_banner">
-                <ul class="s_banner">
-                    <li><a href="javascript:return false;"><img src="./img/s_banner1.png" alt="뉴스레터"></a></li>
-                    <li><a href="javascript:return false;"><img src="./img/s_banner2.png" alt="큐레이터 신청"></a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="section4"><!-- section4 -->
-            <div class="section4_box" data-aos="zoom-in">
-                <!-- GOODS 타이틀 + BOX -->
-                <h1><img src="./img/title_goods.png" alt="GOODS"></h1>
-                <div class="goods_box">
-                    <div class="goods_list">
-                        <div class="goods_item">
-                            <a href="javascript:return false;" class="goods_link">
-                                <span class="goods_tag">
-                                    <img src="./img/tag_new.png" alt="NEW">
-                                </span>
-
-                                <div class="goods_img_box1">
-                                    <img class="o_goods_img" src="./img/goods_ori1.png" alt="LP">
-                                    <img class="h_goods_img" src="./img/goods_h1.png" alt="LP">
-                                    <span class="goods_buy_text">구매하기 &gt;</span>
-                                </div>
-
-                                <div class="goods_info">
-                                    <span class="goods_name">미지 큐레이션 사운드 트랙 ver. LP</span>
-                                    <span class="goods_price">50,000</span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="goods_item">
-                            <a href="javascript:return false;" class="goods_link">
-                                <span class="goods_tag">
-                                    <img src="./img/tag_new.png" alt="NEW">
-                                </span>
-
-                                <div class="goods_img_box2">
-                                    <img class="o_goods_img" src="./img/goods_ori2.png" alt="이달의 영화 필름 키링">
-                                    <img class="h_goods_img" src="./img/goods_h2.png" alt="이달의 영화 필름 키링">
-                                    <span class="goods_buy_text">구매하기 &gt;</span>
-                                </div>
-
-                                <div class="goods_info">
-                                    <span class="goods_name">이달의 영화 필름 키링</span>
-                                    <span class="goods_price">15,000</span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="goods_item">
-                            <a href="javascript:return false;" class="goods_link">
-                                <span class="goods_tag">
-                                    <img src="./img/tag_hot.png" alt="HOT">
-                                </span>
-
-                                <div class="goods_img_box1">
-                                    <img class="o_goods_img" src="./img/goods_ori3.png" alt="행잉 포스터 2종">
-                                    <img class="h_goods_img" src="./img/goods_h3.png" alt="행잉 포스터 2종">
-                                    <span class="goods_buy_text">구매하기 &gt;</span>
-                                </div>
-
-                                <div class="goods_info">
-                                    <span class="goods_name">행잉포스터</span>
-                                    <span class="goods_price">18,000</span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="goods_item">
-                            <a href="javascript:return false;" class="goods_link">
-                                <span class="goods_tag">
-                                    <img src="./img/tag_hot.png" alt="HOT">
-                                </span>
-                                <div class="goods_img_box2">
-                                    <img class="o_goods_img" src="./img/goods_ori4.png" alt="짐색">
-                                    <img class="h_goods_img" src="./img/goods_h4.png" alt="짐색">
-                                    <span class="goods_buy_text">구매하기 &gt;</span>
-                                </div>
-
-                                <div class="goods_info">
-                                    <span class="goods_name">짐색</span>
-                                    <span class="goods_price">30,000</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div id="section5"><!-- section5 -->
-            <div class="community_wrap" data-aos="fade-up" data-aos-duration="900" data-aos-offset="120">
-                <h1><img src="./img/title_community.png" alt="community"></h1>
-
-                <div class="community_box">
-                    <!-- 왼쪽 인기글 -->
-                    <div class="community_left" data-aos="fade-right">
-                        <h2><img src="./img/community_popular.png" alt="인기글"></h2>
-
-                        <a href="javascript:return false;" class="popular_post">
-                            <div class="popular_inner">
-                                <div class="popular_text">
-                                    <div class="popular_user">
-                                        <img class="user_icon" src="./img/user_icon6.png" alt="유저 아이콘">
-                                        <span class="nickname">월요일좋아</span>
-                                    </div>
-
-                                    <h3>뒤늦게 한란을 봤습니다 (스포X)</h3>
-                                    <p>
-                                        처음부터 끝까지 마음이 아픈 영화여서 보는 내내 힘들었어요. 원래 배우는 연기를 잘해야 한다고 생각하기 때문에 연기를 잘한다는 말 같은 건
-                                        잘하지 않는
-                                        편인데 김향기 배우와 김민채 배우의 연기는 언급하지 않을수가 없더군요. 아직 못 보신 분들 계시면 꼭 보세요.
-                                        휴지는 잊지 마시구요!!
-                                    </p>
-
-                                    <div class="post_meta">
-                                        <span class="meta_item">
-                                            <img class="meta_icon" src="./img/icon_like.png" alt="좋아요">
-                                            <span>25</span>
-                                        </span>
-                                        <span class="meta_item">
-                                            <img class="meta_icon" src="./img/icon_comment.png" alt="댓글">
-                                            <span>13</span>
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div class="popular_thumb">
-                                    <img src="./img/com_hanran.png" alt="한란 포스터">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- 오른쪽 최신글 -->
-                    <div class="community_right" data-aos="fade-left">
-                        <h2><img src="./img/community_recent.png" alt="최신글"></h2>
-
-                        <div class="recent_list">
-                            <a href="javascript:return false;" class="recent_item">
-                                <div class="recent_text">
-                                    <h3>독립영화 특별전 초대 이벤트 다들 응모하셨나요?</h3>
-                                    <p>저 매번 이벤트 응모는 까먹지 않고 하는데 당첨이 한 번도 안되네요ㅠㅠ
-                                        이번엔 꼭 됐으면 좋겠어요.</p>
-
-                                    <div class="post_meta">
-                                        <span class="meta_item">
-                                            <img class="meta_icon" src="./img/icon_like.png" alt="좋아요">
-                                            <span>4</span>
-                                        </span>
-                                        <span class="meta_item">
-                                            <img class="meta_icon" src="./img/icon_comment.png" alt="댓글">
-                                            <span>2</span>
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div class="recent_user">
-                                    <img class="user_icon" src="./img/user_icon7.png" alt="유저 아이콘">
-                                    <span class="nickname">Popcorn</span>
-                                </div>
-                            </a>
-
-                            <a href="javascript:return false;" class="recent_item">
-                                <div class="recent_text">
-                                    <h3>영화 &lt;메기&gt; 봤어요. (스포X)</h3>
-                                    <p>이번 주말에 시간이 좀 있어서 나도강아지님이 추천하신 메기 봤습니다.</p>
-
-                                    <div class="post_meta">
-                                        <span class="meta_item">
-                                            <img class="meta_icon" src="./img/icon_like.png" alt="좋아요">
-                                            <span>9</span>
-                                        </span>
-                                        <span class="meta_item">
-                                            <img class="meta_icon" src="./img/icon_comment.png" alt="댓글">
-                                            <span>4</span>
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div class="recent_user">
-                                    <img class="user_icon" src="./img/user_icon8.png" alt="유저 아이콘">
-                                    <span class="nickname">겨울바다</span>
-                                </div>
-                            </a>
-
-                            <a href="javascript:return false;" class="recent_item">
-                                <div class="recent_text">
-                                    <h3>시사회 함께 가실 분 계실까요?</h3>
-                                    <p>극장의 시간을 시사회에 당첨됐는데 1인 2매를 주더라고요. 영화만 같이 보실 분으로 찾아봅니다. 같이 가실 분 계시면 댓글 남겨주세요.</p>
-
-                                    <div class="post_meta">
-                                        <span class="meta_item">
-                                            <img class="meta_icon" src="./img/icon_like.png" alt="좋아요">
-                                            <span>8</span>
-                                        </span>
-                                        <span class="meta_item">
-                                            <img class="meta_icon" src="./img/icon_comment.png" alt="댓글">
-                                            <span>5</span>
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div class="recent_user">
-                                    <img class="user_icon" src="./img/user_icon9.png" alt="유저 아이콘">
-                                    <span class="nickname">blacklable</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div id="section6"><!-- section6 -->
-            <div class="about_wrap" data-aos="fade-up" data-aos-duration="900" data-aos-offset="120">
-                <h1><img src="./img/title_about.png" alt="about 미지"></h1>
-
-                <div class="about_box">
-                    <div class="about_inner">
-                        <div class="about_left" data-aos="fade-right" data-aos-delay="100">
-                            <img class="about_logo" src="./img/logo.png" alt="미지 로고">
-                        </div>
-
-                        <div class="about_right" data-aos="fade-left" data-aos-delay="200">
-                            <div class="about_card" data-aos="flip-up" data-aos-delay="500">
-                                <h3>The Unknown World</h3>
-                                <p>
-                                    '미지'는 아직 발견되지 않은, 하지만 분명히 존재하는 눈부신 독립영화의 세계를 의미합니다.
-                                    우리는 거대한 상영관 너머에서 작지만 단단한 목소리를 내는 영화들을 기록하며,
-                                    당신의 세계가 한 뼘 더 넓어지는 연결의 순간을 만듭니다.
-                                </p>
-                            </div>
-
-                            <div class="about_card" data-aos="flip-up" data-aos-delay="600">
-                                <h3>Member's Archive</h3>
-                                <p>
-                                    미지의 큐레이션은 전문가의 시선이 아닌, 독립영화를 사랑하는 멤버들의 진솔한 시선으로 매일 새롭게 채워집니다.
-                                    온라인 플랫폼을 기반으로 각자의 취향이 담긴 영화를 기록하고 공유하며,
-                                    누군가에게는 낯선 작품이 또 다른 이에게는 인생작으로 발견되는 특별한 경험을 만들어갑니다.
-                                </p>
-                            </div>
-
-                            <div class="about_card" data-aos="flip-up" data-aos-delay="700">
-                                <h3>Timeless Discovery</h3>
-                                <p>
-                                    한 번의 감상으로 끝나는 것이 아니라 소중한 영화적 순간들이 잊히지 않도록 차곡차곡 쌓아두는 디지털 보관소의 역할을 수행하며,
-                                    시간이 흘러도 가치가 변하지 않는 독립영화들을 언제든 다시 꺼내 볼 수 있는
-                                    우리만의 작고 소중한 영화 도서관을 지향합니다.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div id="section7"><!-- instagram -->
-            <div class="insta_wrap">
-                <div class="insta_slide">
-                    <div class="insta_inner">
-                        <ul>
-                            <li><a href="javascript:return false;"><img src="./img/insta_1.png" alt="인스타 이미지 1"></a>
-                            </li>
-                            <li><a href="javascript:return false;"><img src="./img/insta_2.png" alt="인스타 이미지 2"></a>
-                            </li>
-                            <li><a href="javascript:return false;"><img src="./img/insta_3.png" alt="인스타 이미지 3"></a>
-                            </li>
-                            <li><a href="javascript:return false;"><img src="./img/insta_4.png" alt="인스타 이미지 4"></a>
-                            </li>
-                            <li><a href="javascript:return false;"><img src="./img/insta_5.png" alt="인스타 이미지 5"></a>
-                            </li>
-                            <li><a href="javascript:return false;"><img src="./img/insta_6.png" alt="인스타 이미지 6"></a>
-                            </li>
-                            <li><a href="javascript:return false;"><img src="./img/insta_7.png" alt="인스타 이미지 7"></a>
-                            </li>
-                            <li><a href="javascript:return false;"><img src="./img/insta_8.png" alt="인스타 이미지 8"></a>
-                            </li>
-                        </ul>
-
-                        <ul>
-                            <li><a href="javascript:return false;"><img src="./img/insta_1.png" alt="인스타 이미지 1"></a>
-                            </li>
-                            <li><a href="javascript:return false;"><img src="./img/insta_2.png" alt="인스타 이미지 2"></a>
-                            </li>
-                            <li><a href="javascript:return false;"><img src="./img/insta_3.png" alt="인스타 이미지 3"></a>
-                            </li>
-                            <li><a href="javascript:return false;"><img src="./img/insta_4.png" alt="인스타 이미지 4"></a>
-                            </li>
-                            <li><a href="javascript:return false;"><img src="./img/insta_5.png" alt="인스타 이미지 5"></a>
-                            </li>
-                            <li><a href="javascript:return false;"><img src="./img/insta_6.png" alt="인스타 이미지 6"></a>
-                            </li>
-                            <li><a href="javascript:return false;"><img src="./img/insta_7.png" alt="인스타 이미지 7"></a>
-                            </li>
-                            <li><a href="javascript:return false;"><img src="./img/insta_8.png" alt="인스타 이미지 8"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <footer id="footer">
-            <div class="footer_inner">
-                <div class="footer_left">
-                    <a href="javascript:return false;" class="footer_logo">
-                        <img src="./img/logo.png" alt="미지 로고">
-                    </a>
-
-                    <div class="footer_info_top">
-                        <a href="javascript:return false;">이용약관</a>
-                        <a href="javascript:return false;">개인정보처리방침</a>
-                        <a href="javascript:return false;">법적고지</a>
-                        <a href="javascript:return false;">이메일주소무단수집거부</a>
-                    </div>
-
-                    <div class="footer_info_middle">
-                        <div class="footer_info_row">
-                            <a href="mailto:indiefilmmizi@gmail.com">mail: indiefilmmizi@gmail.com</a>
-                            <p>대표전화: 051-1000-2000</p>
-                        </div>
-
-                        <div class="footer_info_row">
-                            <p>주소: 부산광역시 중구 중앙대로 26 다원중앙타워 10층</p>
-                            <p>대표: 김미지</p>
-                            <p>사업자번호: 100-00-00000</p>
-                        </div>
-                    </div>
-
-                    <p class="footer_copy">Copyrightⓒ미지 All Rights Reserved.</p>
-                </div>
-
-                <div class="footer_right">
-                    <div class="footer_sns">
-                        <a href="javascript:return false;" class="footer_sns_link">
-                            <img src="./img/kakao.png" alt="카카오톡">
-                        </a>
-                        <a href="javascript:return false;" class="footer_sns_link">
-                            <img src="./img/insta.png" alt="인스타그램">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-
-
-
-        <!-- 제이쿼리 -->
-        <script>  // 헤더투명화 제이쿼리
-            window.addEventListener('scroll', function () {
-                const header = document.getElementById('header_wrap');
-
-                if (window.scrollY >= 820)
-                // 820만큼 내려가면 헤더 배경 바뀌기
-                {
-                    header.classList.add('header-transparent');
-                } else {
-                    header.classList.remove('header-transparent');
-                }
-            });
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-        <script>// <!-- swiper 제이쿼리 -->
-            var swiper = new Swiper(".mySwiper", {
-                pagination: {
-                    el: ".swiper-pagination",
-                    dynamicBullets: true,
-                },
-            });
-        </script>
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-                loop: true, speed: 700,
-                // 무한으로 / 스와이퍼 속도
-                autoplay: {
-                    delay: 3000,         // 딜레이 3초!
-                    disableOnInteraction: false, // 클릭이나 드래그한 후에도 자동 재생 되기
-                },
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                    dynamicBullets: true,
-                },
-            });
-        </script>
-        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-        <script>// aos 제이쿼리
-            AOS.init({
-                duration: 1000,      // 올라오는 속도
-                easing: 'ease-out-cubic',
-                once: true          // 한 번만 실행 (추천)
-            });
-        </script>
-
-        </script>
-
-        <div class="popup" id="loginPopup" aria-hidden="true"> <!-- 로그인 팝업창 -->
-            <div class="popup_overlay" data-close="login"></div>
-            <div class="popup_box" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
-                <button class="popup_close" type="button" data-close="login" aria-label="close">×</button>
-
-                <h2 class="popup_title" id="loginTitle">로그인</h2>
-
-                <form class="popup_form" action="#" onsubmit="return false;">
-                    <label class="popup_label">
-                        <span>아이디</span>
-                        <input class="popup_input" type="text" placeholder="ID를 입력하세요" autocomplete="username">
-                    </label>
-
-                    <label class="popup_label">
-                        <span>비밀번호</span>
-                        <input class="popup_input" type="password" placeholder="••••" autocomplete="current-password">
-                    </label>
-
-                    <!-- onclick ~ 로그인 버튼 눌러도 스크롤 업 되지 않게 -->
-                    <a href="javascript:return false;" class="popup_submit" onclick="return false;">로그인</a>
-
-                    <!-- 하단 보조 메뉴 (UI only) -->
-                    <div class="popup_subactions">
-                        <a href="javascript:return false;" class="popup_subbtn">회원가입</a>
-                        <a href="javascript:return false;" class="popup_subbtn">아이디/비밀번호찾기</a>
-                    </div>
-                    <p class="popup_hint">
-                        미지의 세계에 오신 걸 환영합니다
-                    </p>
-                </form>
-            </div>
-        </div>
-
-        <script>// member과 login 둘 다 눌러도 팝업창이 뜨도록 하기
-            (function () {
-                const loginLinks = document.querySelectorAll('.util a.login, .util a.member');
-
-                const popup = document.getElementById('loginPopup');
-                const overlay = popup.querySelector('.popup_overlay');
-                const closeBtns = popup.querySelectorAll('[data-close="login"]');
-
-                function openModal() {
-                    popup.classList.add('is-open');
-                    popup.setAttribute('aria-hidden', 'false');
-                    document.documentElement.style.overflow = 'hidden';
-                    const first = popup.querySelector('.popup_input');
-                    first && first.focus();
-                }
-
-                function closeModal() {
-                    popup.classList.remove('is-open');
-                    popup.setAttribute('aria-hidden', 'true');
-                    document.documentElement.style.overflow = '';
-                }
-
-
-                loginLinks.forEach(link => {
-                    link.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        openModal();
-                    });
-                });
-
-                overlay.addEventListener('click', closeModal);
-                closeBtns.forEach(btn => btn.addEventListener('click', closeModal));
-
-                document.addEventListener('keydown', (e) => {
-                    if (!popup.classList.contains('is-open')) return;
-                    if (e.key === 'Escape') closeModal();
-                });
-            })();
-        </script>
-
-
-        <!-- 미지의기록 -->
-        <script>
-            const counters = document.querySelectorAll('.count');
-            const contents5 = document.querySelector('.record');
-            let counterStarted = false;
-
-            function startCounter() {
-                counters.forEach(counter => {
-                    const target = Number(counter.dataset.target);
-                    let current = 0;
-                    const duration = 1800;
-                    const stepTime = 20;
-                    const totalSteps = duration / stepTime;
-                    const increment = target / totalSteps;
-
-                    const timer = setInterval(() => {
-                        current += increment;
-
-                        if (current >= target) {
-                            counter.textContent = target.toLocaleString();
-                            clearInterval(timer);
-                        } else {
-                            counter.textContent = Math.floor(current).toLocaleString();
-                        }
-                    }, stepTime);
-                });
-            }
-
-            function checkCounter() {
-                if (!contents5 || counterStarted) return;
-
-                const rect = contents5.getBoundingClientRect();
-                const triggerPoint = window.innerHeight * 0.8;
-
-                if (rect.top < triggerPoint) {
-                    counterStarted = true;
-                    startCounter();
-                }
-            }
-
-            window.addEventListener('scroll', checkCounter);
-            window.addEventListener('load', checkCounter);
-        </script>
-        <!-- 팝업에서 버튼 눌렀을 때 스크롤 다시 위로 올라가는 거 막기 -->
-        <script>
-            document.querySelectorAll('.popup_subbtn').forEach(btn => {
-                btn.addEventListener('click', function (e) {
-                    e.preventDefault();
-                });
-            });
-        </script>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <ul class="popup_info">
+        <li>
+          <h5>청년 일대일 맞춤형 재무상담</h5>
+          <p>카드뉴스 작업입니다.</p>
+        </li>
+        <li>
+          <p>사용툴 : Photoshop, Illustrator</p>
+          <p>기여도 : 100%</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="script/fullpage.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="script/custom.js"></script>
 </body>
 
 </html>
